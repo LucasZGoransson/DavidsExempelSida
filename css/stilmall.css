@@ -1,18 +1,17 @@
 @charset "UTF-8";
 
 body{
-	background:#f2f2f2;
-	background: linear-gradient(#f2f2f2, yellow);
+	background:white;
+	background: linear-gradient(red, white);
 	background-repeat:no-repeat;
 }
 
 nav{
-	background-color:#f2f2f2;
-	color:#f2f2f2;
+	background-color:white;
+	color:white;
 	font-size:1.5em;
-	font-family:cursive;
-	font-weight:bold;
-	height:80px;
+	font-family:arial;
+	height:60px;
 	width:100%;
 	margin-top:15px;
 	margin-bottom: 15px;
@@ -35,7 +34,7 @@ p{
 
 header>h1{
 	font-size:2.5em;
-	font-family:Verdana, arial;
+	font-family:Arial;
 	text-align: center;
 	padding-top:10px;
 	margin:0;
@@ -48,7 +47,6 @@ ul li {
 	margin-top:auto;
 	margin-bottom:auto;
 	background: red;
-	background: linear-gradient(red, yellow);
 	border: 4px outset #323232;
 	width:14%;
 	text-align:center;	
@@ -82,20 +80,19 @@ a:link,a:visited,a:focus,a:hover,a:active{
 #wrapper{
 	width:85%;
 	margin:0 auto; /*centrering*/
-	background:#ccccff;
-	background: linear-gradient(#ccccff, #0000b3);
+	background:blue;
 	color:white;
 }
 
 #content{
 	float:left;
- width:75%;
+	width:75%;
 	margin-left:10px;
  }
 	
 	#produkter #content{
-		margin:0 auto;
-		width: 100%;
+	margin:0 auto;
+	width: 100%;
 	}
  
 #index #content p{

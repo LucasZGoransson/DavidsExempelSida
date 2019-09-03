@@ -1,69 +1,85 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-     <meta charset="utf-8">
-     <title>Min onlinebutik</title>
-		 <link rel="stylesheet" href="css/stilmall.css">
+	<head>
+		<meta charset="utf-8">
+		<title>Produkter</title>
+		<link rel="stylesheet" href="css/stilmall.css">
 	</head>
-  <body id="index">
-    <div id="wrapper">
-	
-      <?php
-		require "header.php";
-		require "nav.php";
-		?>
-			
+	<body id="produkter">
+   
+		<div id="wrapper">
+		
+			<!--Egen fil -->
+			<header><!--Sidhuvud-->
+				<h1>Min onlinebutik - Produkter</h1>
+			</header>
+      
+			<nav>
+				<ul>
+					<li><a href="index.php">Start</a></li>
+					<li><a href="products.php">Produkter</a></li>
+					<li><a href="sida3.php">Varusida</a></li>
+					<li><a href="login.php">Logga in</a></li>
+				</ul>
+			</nav>
+		
 			<main> <!--Huvudinnehåll-->
 				<section id="content">
-					<article>
-						<figure>
-							<img src="bilder/teknikum.jpg" alt="">
-							<figcaption>Daniel</figcaption>
-						</figure>
-            <p>Lite information angående lärare</p>	      
-					</article>
-					<article>
-						<figure>
-							<img src="bilder/teknikum.jpg" alt="">
-							<figcaption>Andreas</figcaption>
-						</figure>		
-						<p>Some text about Andreas</p>	      
-					</article>
-					<article>
-						<figure>
-							<img src="bilder/teknikum.jpg" alt="">
-								<figcaption>Tomas</figcaption>
-						</figure>		
-						<p>Some text about Tomas.</p>	      
-					</article>
-					<article>
-						<figure>
-							<img src="bilder/teknikum.jpg" alt="">
-							<figcaption>David</figcaption>
-						</figure>		
-							<p>Some Text about David.</p>	      
-					</article>
-				</section>				
-				<aside id="aside">
-				   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla ex nibh, at mattis mi placerat at.
-           Duis in eros risus. Nulla non metus vestibulum, pretium diam sit amet, faucibus urna. Aenean imperdiet pellentesque
-           sagittis. Nullam ac tristique dolor, et fringilla ex. Nullam feugiat magna risus, id sagittis felis venenatis a. Lorem
-           ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur libero vel lacinia bibendum. Donec luctus tempus
-           lacus, id congue mi fermentum id. Pellentesque in dui velit. In efficitur elit eget felis fermentum vehicula a nec sem.
-           Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus id urna congue magna pharetra pretium in quis
-           purus. Etiam sit amet mattis justo.</p>
-            
-           <p>Morbi mi sapien, porttitor in metus ut, fringilla fringilla mauris. Sed et erat fermentum, facilisis tortor et,
-           bibendum turpis. Mauris sit amet auctor nisl, quis facilisis risus. Nulla odio augue, elementum quis sapien eget,
-           lobortis scelerisque ante. Integer condimentum purus eget ipsum finibus feugiat. Donec fermentum augue ex, in rhoncus
-           nisl eleifend ac. Donec consectetur diam consectetur mauris elementum, vitae scelerisque felis consequat. Maecenas
-           volutpat lectus id rutrum auctor.</p>
-				</aside>
+			
+					<h2>Varor</h2>
+				
+					<table>
+						<thead>
+							<tr>
+								<th>Namn</th>
+								<th>Beskrivning</th>
+								<th>Bild</th>
+								<th>Pris</th>
+								<th></th>
+							</tr>
+						</thead>
+					
+						<tbody>
+							<tr>
+								<td>Äpple</td>
+								<td>Grönt surt</td>
+								<td><img src="bilder/apple.jpg" alt="Grönt surt"></td>
+								<td>50</td>
+								<td><a href="#">Köp</a></td>
+							</tr>
+						
+							<tr>
+								<td>Apelsin</td>
+								<td>Orange söt</td>
+								<td><img src="bilder/orange.jpg" alt="Orange söt"></td>
+								<td>38</td>
+								<td><a href="#">Köp</a></td>
+							</tr>
+						
+							<tr>
+								<td>Päron</td>
+								<td>Gult saftigt</td>
+								<td><img src="bilder/pear.jpg" alt="Gult saftigt"></td>
+								<td>100</td>
+								<td><a href="#">Köp</a></td>
+							</tr>
+						
+							<tr>
+								<td>Banan</td>
+								<td>Gul böjd</td>
+								<td><img src="bilder/banana.jpg" alt="Gul böjd"></td>
+								<td>30</td>
+								<td><a href="#">Köp</a></td>
+							</tr>
+						</tbody>
+					</table>
+
+				</section>
 			</main>
+	
+			<footer>
+				 Webbplats för kursen Webbserverprogrammering 1
+			</footer>
 		</div>
-		<!--Egen fil -->
-		<footer>
-			 Webbplats för kursen Webbserverprogrammering 1
-		</footer>
-  </body>
+	</body>
 </html>
