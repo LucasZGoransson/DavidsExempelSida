@@ -9,19 +9,10 @@
    
 		<div id="wrapper">
 		
-			<!--Egen fil -->
-			<header><!--Sidhuvud-->
-				<h1>Min onlinebutik - Produkter</h1>
-			</header>
-      
-			<nav>
-				<ul>
-					<li><a href="index.php">Start</a></li>
-					<li><a href="products.php">Produkter</a></li>
-					<li><a href="sida3.php">Varusida</a></li>
-					<li><a href="login.php">Logga in</a></li>
-				</ul>
-			</nav>
+			<?php
+				require "php/productsheader.php";
+				require "php/productsnav.php";
+			?>
 		
 			<main> <!--Huvudinnehåll-->
 				<section id="content">
@@ -77,9 +68,10 @@
 				</section>
 			</main>
 	
-			<footer>
-				 Webbplats för kursen Webbserverprogrammering 1
-			</footer>
+			<?php
+				require "php/productsfooter.php";
+			?>
+
 		</div>
 	</body>
 </html>

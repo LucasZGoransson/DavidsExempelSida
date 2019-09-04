@@ -70,9 +70,11 @@
 					volutpat lectus id rutrum auctor.</p>
 				</aside>
 			</main>
+			
 			<?php
 				require "php/indexfooter.php";
 			?>
+			
 		</div>
 	</body>
 </html>

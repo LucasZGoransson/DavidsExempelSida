@@ -8,19 +8,11 @@
 	<body id="login">
 		
 		<div id="wrapper">
-			
-			<header><!--Sidhuvud-->
-				<h1>Min onlinebutik - Logga in</h1>
-			</header>
-      
-			<nav>
-				<ul>
-					<li><a href="index.php">Start</a></li>
-					<li><a href="products.php">Produkter</a></li>
-					<li><a href="sida3.php">Varusida</a></li>
-					<li><a href="login.php">Logga in</a></li>
-				</ul>
-			</nav>
+
+			<?php 
+				require "php/loginheader.php";
+				require "php/loginnav.php";
+			?>
 		
 			<main> <!--Huvudinnehåll-->
 				<section>
@@ -43,9 +35,9 @@
 
 		</div>
 		
-		<footer>
-			 Webbplats för kursen Webbserverprogrammering 1
-		</footer>
+		<?php 
+				require "php/loginfooter.php";
+		?>
 
 	</body>
 </html>
