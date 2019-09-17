@@ -10,8 +10,8 @@
 		<div id="wrapper">
 			
 			<?php
-				require "php/sida3header.php";
-				require "php/sida3nav.php";
+				require "php/header.php";
+				require "php/nav.php";
 			?>
 			
 			<main> <!--Huvudinnehåll-->
@@ -50,7 +50,7 @@
 		</div>
 		
 			<?php
-				require "php/sida3footer.php";
+				require "php/footer.php";
 			?>
   
 	</body>

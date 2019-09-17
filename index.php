@@ -10,8 +10,8 @@
 		<div id="wrapper">
       
 			<?php
-				require "php/indexheader.php";
-				require "php/indexnav.php";
+				require "php/header.php";
+				require "php/nav.php";
 			?>
 			
 			<main> <!--Huvudinnehåll-->
@@ -72,7 +72,7 @@
 			</main>
 			
 			<?php
-				require "php/indexfooter.php";
+				require "php/footer.php";
 			?>
 			
 		</div>

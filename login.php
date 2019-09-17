@@ -10,8 +10,8 @@
 		<div id="wrapper">
 
 			<?php 
-				require "php/loginheader.php";
-				require "php/loginnav.php";
+				require "php/header.php";
+				require "php/nav.php";
 			?>
 		
 			<main> <!--Huvudinnehåll-->
@@ -36,7 +36,7 @@
 		</div>
 		
 		<?php 
-				require "php/loginfooter.php";
+				require "php/footer.php";
 		?>
 
 	</body>
