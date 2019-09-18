@@ -12,6 +12,8 @@
 			<?php
 				require "php/header.php";
 				require "php/nav.php";
+				
+				require "php/varor.php";
 			?>
 		
 			<main> <!--Huvudinnehåll-->
@@ -31,7 +33,29 @@
 						</thead>
 					
 						<tbody>
-							<tr>
+							<?php
+								foreach($varor as $vara)
+								{
+									echo "<tr><td>";
+									echo $vara[0];
+									echo "</td><td>";
+									echo $vara[1];
+									echo "</td><td>";
+									
+									echo "<img src='";
+									echo $vara[3];
+									echo "'alt='";
+									echo $vara[3];
+									echo "'>";
+									
+									echo "</td><td>";
+									echo $vara[2];
+									echo "</td></tr>";
+								}
+							?>
+						
+						
+						<!--	<tr>
 								<td>Äpple</td>
 								<td>Grönt surt</td>
 								<td><img src="bilder/apple.jpg" alt="Grönt surt"></td>
@@ -61,7 +85,7 @@
 								<td><img src="bilder/banana.jpg" alt="Gul böjd"></td>
 								<td>30</td>
 								<td><a href="#">Köp</a></td>
-							</tr>
+							</tr>-->
 						</tbody>
 					</table>
 
