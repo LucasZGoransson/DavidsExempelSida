@@ -18,14 +18,38 @@
 				<section>
 					<form action="php/password.php" method="post">
 				
-						<p><label for="user">Användarnamn:</label>
-						<input type="text" id="user" name="username"></p>
+						<legend>Personlig information:</legend>
 				
-						<p><label for="pwd">Lösenord:</label>
-						<input type="password" id="pwd" name="password"></p>
+						<p><label for="Username">Användarnamn:</label><br>
+						<input type="username" name="username" value="TimBernersLee" required></p>
+						
+						<p><label for="Password">Lösenord:</label><br>
+						<input type="password" name="password" value="1234567890" required></p>
+				
+						<p><label for="Mail">E-mail:</label><br>
+						<input type="email" name="email" required></p>
+						
+						<p><label for="Phonenumber">Telefonnummer:</label><br>
+						<input type="text" name="phonenumber" required></p>
+						
+						<p><label for="Adress">Adress:</label><br>
+						<input type="text" name="adress" required></p>
+						
+						<p><label for="City">Ort:</label><br>
+						<input type="text" name="city" required></p>
+						
+						<p><label for="ZIPCode">Postnummer:</label><br>
+						<input type="text" name="zipcode" required></p>
+				
+						<p><label for="Gender">Välj kön:</label><br>
+						<select name="Gender">
+						<option value="male">Man</option>
+						<option value="female">Kvinna</option>
+						<option value="other">Annat</option>
+						<option value="unspecified">Ospecificerat</option></p>
 				
 						<p><input type="submit" value="Skapa användare"></p>
-				
+						
 					</form>
 				</section>
 			</main>
