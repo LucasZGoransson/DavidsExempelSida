@@ -1,3 +1,19 @@
+<?php
+	$str="";
+	if(isset($_GET['status']))
+	{
+		if($_GET['status']==1)
+		{
+			$str="Felaktig användare";
+		}
+		
+		elseif($_GET['status']==2)
+		{
+			$str="Felaktigt lösemord";
+		}
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="sv">
 	<head>
